@@ -1,47 +1,32 @@
 /*
-    TIPO NUMERO
-        parseInt
-        parseFloat
+
+Number
+parseInt
+parseFloat
+
 */
-// Variavel Number
-var idade = 29;
-console.log(typeof idade, idade);
-console.log(typeof idade, idade+1);
+    //conversão de de string para numero
+    var idade  = "20"
+    console.log(typeof idade, idade)
+    var idade  = Number("20")
+    console.log(typeof idade, idade)
 
-// Variavel String
-var idade = '29';
-console.log(typeof idade, idade);
-console.log(typeof idade, idade+1);
+    //converter boolean para numero
+    var number  = Number(false)
+    console.log(typeof number, number)
+    var number  = Number(true)
+    console.log(typeof number, number)
 
-// Variavel String em Number
-var idade = Number('29');
-console.log(typeof idade, idade);
-console.log(typeof idade, idade+1);
-
-// Variavel Boolean
-var number = true;
-console.log(typeof number, number);
-
-// Variavel Boolean em Number
-var number = Number(false);
-console.log(typeof number, number);
-var number = Number(true);
-console.log(typeof number, number);
-
-/*data*/
-var number = new Date ()
+//converter date para numero
+var number  = Number(new Date())
 console.log(typeof number, number)
 
-/*converter data para numero*/
-var number = Number(new Date ())
-console.log(typeof number, number)
-
-/*converter usando o parseint*/
-var n = "29"
+//CONVERTER DE STRING PARA NUMERO USANDO USANDO O PARSEINT
+var n = "29.23"
 console.log(typeof n, n)
-console.log(typeof parseInt(n),parseInt(n))
+console.log(typeof parseInt(n), parseInt(n))
 
-// converter de string para numero usando o parseflooat
+//CONVERTER DE STRING PARA NUMERO USANDO USANDO O PARSEFLOAT
 var n = "29.23"
 console.log(typeof n, n)
 console.log(typeof parseFloat(n), parseFloat(n))

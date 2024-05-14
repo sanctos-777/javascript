@@ -26,7 +26,7 @@ console.log(array[2]); // Saída: 30
 
 // Verificando o tamanho do array
 let arraylength = [1, 2, 3];
-console.log(arraylength.length); // Saída: 3
+console.log("O tamanho do array e:",arraylength.length); // Saída: 3
 
 // inserindo um item no final do array
 arraylength.push(4);
@@ -37,21 +37,17 @@ let removedElement = arraylength.pop();
 console.log(removedElement); // Saída: 4
 console.log(arraylength); // Saída: [1, 2, 3]
 
+// Remove o item na posição do índice
 var array5 = [1, 2, 3, 4, 5];
-
 // Índice do item a ser removido
 var indice = 2;
-
-// Remove o item na posição do índice
-array5.splice(indice, 3);
-
+array5.splice(indice, 1);
 console.log(array5); // Saída: [1, 2, 4, 5]
 
+// Inserir o item na posição do índice
 var array6 = [1, 2, 4, 5];
-var index = 2; // Índice onde você deseja inserir o valor
+var indice = 2; // Índice onde você deseja inserir o valor
 var newValue = 3; // Valor que você deseja inserir
-
 // Insere o novo valor na posição do índice
-array6.splice(index, 0, newValue);
-
+array6.splice(indice, 0, newValue);
 console.log(array6); // Saída: [1, 2, 3, 4, 5]

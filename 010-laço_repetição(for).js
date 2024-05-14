@@ -7,7 +7,7 @@ de código um número específico de vezes.
   ou executar uma ação repetida com base em uma 
   condição. */
 
-  for (let i = 0; i <= 5; i++) {
+for (let i = 0; i <= 5; i++) {
     console.log(i);
 }
 

@@ -17,14 +17,15 @@ if (a >= b && a === b) {
 let c = 8;
 let d = 7;
 //OU(OR)
-if (c >= d || c === d) {
+if (c >= d || c === d ) {
     console.log("c é maior ou igual a d");
 } else {
     console.log("c não é maior ou igual a d");
 }
 
-let e = 9;
+let e = 5;
 let f = 7;
+
 //Negação - !
 if (!(e < f || e == f)) {
     console.log("e é maior ou igual a f");

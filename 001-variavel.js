@@ -1,26 +1,38 @@
+/*
+TIPOS DE VARIAVEIS:
+    VAR - variavel global
+    LET - varaivel de escopo ou local
+    CONST - varaivel imutavel e local
+*/
 
-const n3 = 'constante'
-var n1;
-let n2;
 
-/*var nome = "rodrigo"
-if (true)
+// Exemplo de erro com var
+var nome = "João";
+console.log(nome); // Saída: "João"
 {
-    var nome = "jesus"
-}var nome = "silva"
-console.log(nome)*/
-
-/*let varavel de escopo*/
-
-/*if (true)
-{ 
-    let nome = "jesus"
+    var nome = "Maria"; // Reatribui o valor da variável global
+    console.log(nome); // Saída: "Maria"
 }
-    console.log(nome)*/
-    
-    const nome = 'constante'
-    if (true)
-{ 
-    const nome = "jesus"
+console.log(nome); // Saída: "Maria" (o valor foi alterado fora do bloco)
+
+// Exemplo de erro com let
+let animal = "gato";
+console.log(animal); // Saída: "gato"
+{
+    let animal = "cachorro"; // Declara uma nova variável de bloco com o mesmo nome
+    console.log(animal); // Saída: "cachorro"
 }
-    console.log(nome)
+console.log(animal); // Saída: "gato" (o valor não foi alterado fora do bloco)
+
+// Exemplo de erro com const
+const COR = "azul";
+console.log(COR); // Saída: "azul"
+{
+    const COR = "vermelho"; // Declara uma nova constante de bloco com o mesmo nome
+    console.log(COR); // Saída: "vermelho"
+}
+console.log(COR); // Saída: "azul" (o valor não foi alterado fora do bloco)
+
+// Erro ao tentar reatribuir uma constante (irá gerar erro)
+const IDADE = 30;
+IDADE = 40; // Isso irá gerar um erro
